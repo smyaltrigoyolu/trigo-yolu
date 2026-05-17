@@ -21,6 +21,7 @@
     <!-- Soru Ekranı -->
     <div id="questionScreen" class="screen hidden">
         <div class="timer-container">
+            <span class="timer-icon">⏱️</span>
             <span id="timer" class="timer">60</span>
         </div>
         <div class="question-container">
@@ -28,9 +29,14 @@
             <h2 id="questionText" class="question-text"></h2>
         </div>
         <div class="options-container">
-            <button class="option-btn" data-index="0"></button>
-            <button class="option-btn" data-index="1"></button>
-            <button class="option-btn" data-index="2"></button>
+            <div class="options-row">
+                <button class="option-btn" data-index="0"></button>
+                <button class="option-btn" data-index="1"></button>
+            </div>
+            <div class="options-row">
+                <button class="option-btn" data-index="2"></button>
+                <button class="option-btn" data-index="3"></button>
+            </div>
         </div>
         <div id="resultMessage" class="result-message hidden"></div>
     </div>
